@@ -1,1 +1,33 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Droplet.png" type="image/x-icon">
+</head>
+<body>
+    <div id="desktop">
+        <div class="window" id="app1">
+            <div class="title-bar">App 1</div>
+            <div class="content">Welcome to App 1.</div>
+        </div>
+        <div class="window" id="app2">
+            <div class="title-bar">App 2</div>
+            <div class="content">Welcome to App 2.</div>
+        </div>
+        <div class="taskbar">
+            <button onclick="toggleStartMenu()">Start</button>
+            <div id="start-menu" class="hidden">
+                <ul>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Shut Down</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
