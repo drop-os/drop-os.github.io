@@ -81,3 +81,13 @@ body {
 #start-menu li:hover {
     background: #eee;
 }
+
+button {
+    background: #1560BD;
+    border-radius: 100px;
+}
+
+button:hover {
+    background: #0047ab;
+    border-radius: 100px;
+}
