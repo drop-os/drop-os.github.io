@@ -8,26 +8,41 @@
     <link rel="icon" href="/site/Droplet.png" type="image/x-icon">
 </head>
 <body>
+    <!-- Menu Bar -->
+    <div id="menu-bar">
+        <div class="menu-item">Apple</div>
+        <div class="menu-item">File</div>
+        <div class="menu-item">Edit</div>
+        <div class="menu-item">View</div>
+        <div class="menu-item">Go</div>
+        <div class="menu-item">Window</div>
+        <div class="menu-item">Help</div>
+    </div>
+
+    <!-- Desktop -->
     <div id="desktop">
+        <!-- Fake Application Windows -->
         <div class="window" id="app1">
-            <div class="title-bar">App 1</div>
-            <div class="content">Welcome to App 1.</div>
-        </div>
-        <div class="window" id="app2">
-            <div class="title-bar">App 2</div>
-            <div class="content">Welcome to App 2.</div>
-        </div>
-        <div class="taskbar">
-            <button onclick="toggleStartMenu()">Start</button>
-            <div id="start-menu" class="hidden">
-                <ul>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Shut Down</a></li>
-                </ul>
+            <div class="title-bar">
+                <span>App 1</span>
+                <div class="window-controls">
+                    <div class="control-button close"></div>
+                    <div class="control-button minimize"></div>
+                    <div class="control-button maximize"></div>
+                </div>
             </div>
+            <div class="content">This is an application window.</div>
+        </div>
+
+        <!-- Dock -->
+        <div id="dock">
+            <div class="dock-icon">📂</div>
+            <div class="dock-icon">🔍</div>
+            <div class="dock-icon">🖥️</div>
+            <div class="dock-icon">⚙️</div>
         </div>
     </div>
-    <script src="/site/scripts.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
