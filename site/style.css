@@ -60,7 +60,7 @@ body {
 .control-button {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
+    border-radius: 100px;
     margin: 0 3px;
     cursor: pointer;
 }
